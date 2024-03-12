@@ -11,7 +11,7 @@ const MenuNavbar = ({ pilihMenu }: MenuNavProps) => {
   };
   return (
     <>
-      <ul className="flex items-center flex-col md:flex-row md:gap-[18px]">
+      <ul className="flex items-center flex-col md:flex-row">
         <li className="mb-4 md:mb-0 text-lg">
           <Link href="#" onClick={mengaturMenuKlik}>
             BLOGS

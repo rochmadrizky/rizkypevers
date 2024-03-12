@@ -1,10 +1,13 @@
-import Navbar from "./components/navigasi/Navbar";
+import HomeContent from "./components/home/HomeContent";
 
 export default function Home() {
   return (
-    <div>
+    <div
+      className="min-h-screen flex items-center justify-center"
+      style={{ backgroundImage: `url('/background/topography.svg')` }}
+    >
       <div>
-        <Navbar />
+        <HomeContent />
       </div>
     </div>
   );

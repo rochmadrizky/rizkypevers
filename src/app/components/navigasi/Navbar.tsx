@@ -57,7 +57,7 @@ const Navbar = () => {
         </div>
 
         <div className="block md:hidden">
-          <div className="flex items-center justify-center gap-4 relative">
+          <div className="flex items-center justify-center gap-4">
             <div className="z-10">
               <SearchButton />
             </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
               <ButtonNotif />
             </div>
 
-            <div className="absolute -right-[70px]">
+            <div>
               <button
                 onClick={klikMenuIcon}
                 className={`transform ${
