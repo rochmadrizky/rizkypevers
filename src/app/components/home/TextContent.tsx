@@ -4,7 +4,7 @@ const TextContent = () => {
   return (
     <div className="max-w-7xl mx-auto">
       <div className="flex flex-col items-center justify-center gap-2 px-4">
-        <div className="max-w-lg self-start">
+        <div className="max-w-lg self-start rounded-bl-2xl border-b border-l border-black">
           <div className="p-4 text-center md:text-left">
             <h1>Hai ini text sebelah kiri</h1>
             <p>
@@ -16,7 +16,7 @@ const TextContent = () => {
           </div>
         </div>
 
-        <div className="max-w-lg self-end">
+        <div className="max-w-lg self-end rounded-bl-2xl border-b border-l border-black">
           <div className="p-4 text-center md:text-left">
             <h1>Hai ini text sebelah kanan</h1>
             <p>

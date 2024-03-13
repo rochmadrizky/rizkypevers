@@ -110,23 +110,28 @@ const HomeContent = () => {
         <div className="flex flex-col items-center justify-center relative pb-4">
           <div className="flex items-center justify-center relative">
             <div
-              className="h-[240px] w-[280px] md:h-[320px] md:w-[440px] lg:w-[680px] overflow-hidden bg-center bg-cover duration-500 rounded-l-2xl"
+              className="h-[240px] w-[280px] md:h-[320px] md:w-[440px] lg:w-[680px] xl:w-[880px] overflow-hidden bg-center bg-cover duration-500 rounded-l-2xl"
               style={{
                 backgroundImage: `url(${konten[indeksSaatIni].gambar})`,
               }}
             ></div>
 
-            <div className="bg-black h-[280px] w-[140px] md:h-[360px] md:w-[280px] absolute -right-4 -z-10 rounded-r-2xl"></div>
+            <div className="border-2 border-black h-[280px] w-[140px] md:h-[360px] md:w-[280px] absolute -right-4 -z-10 rounded-r-2xl"></div>
           </div>
 
-          <div className="flex flex-col items-center justify-center absolute bottom-5 -left-10 md:-left-32">
-            <div className="text-center p-4">
-              <h2 className="text-xl md:text-4xl font-bold">
-                {konten[indeksSaatIni].judul}
-              </h2>
-              <p className="text-base md:text-2xl">
-                {konten[indeksSaatIni].deskripsi}
-              </p>
+          <div className="flex flex-col absolute bottom-10 -left-4 md:-left-28">
+            <div className="flex items-center justify-center relative">
+              <div className="w-56 h-28 md:h-32 border-2 border-black absolute -left-2 md:-left-4 rounded-l-xl -z-10"></div>
+              <div className="xl:w-[360px] xl:h-24 rounded-tl-xl rounded-bl-xl bg-black flex items-center justify-center">
+                <div className="text-center p-4 text-white">
+                  <h2 className="text-xl md:text-4xl font-bold">
+                    {konten[indeksSaatIni].judul}
+                  </h2>
+                  <p className="text-base md:text-2xl">
+                    {konten[indeksSaatIni].deskripsi}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
