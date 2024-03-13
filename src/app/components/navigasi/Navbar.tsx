@@ -42,15 +42,15 @@ const Navbar = () => {
 
   return (
     <header className="border-b-2 border-blue-500 bg-gray-100 p-4 sticky top-0 left-0 right-0 z-10">
-      <div className="max-w-7xl relative mx-auto flex justify-center items-center">
-        <div className="flex items-center">
-          <div className="hidden md:block">
-            <MenuNavbar pilihMenu={pilihMenu} />
-          </div>
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="hidden md:block">
+          <div className="flex items-center justify-between">
+            <Link href="/" className="text-4xl">
+              RIZKYP
+            </Link>
 
-          <div className="absolute right-0 hidden md:block">
-            <div className="flex items-center justify-center gap-4">
-              <ButtonNotif />
+            <div className="flex items-center justify-center gap-8">
+              <MenuNavbar pilihMenu={pilihMenu} />
               <SearchButton />
             </div>
           </div>

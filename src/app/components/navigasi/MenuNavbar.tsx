@@ -11,17 +11,13 @@ const MenuNavbar = ({ pilihMenu }: MenuNavProps) => {
   };
   return (
     <>
-      <ul className="flex items-center flex-col md:flex-row">
+      <ul className="flex items-center flex-col md:flex-row gap-4">
         <li className="mb-4 md:mb-0 text-lg">
           <Link href="#" onClick={mengaturMenuKlik}>
             BLOGS
           </Link>
         </li>
-        <li className="mb-4 md:mb-0 hidden md:block">
-          <Link href="/" onClick={mengaturMenuKlik} className="text-4xl">
-            Rizky Putra
-          </Link>
-        </li>
+
         <li className="mb-4 md:mb-0 text-lg">
           <Link href="#" onClick={mengaturMenuKlik}>
             ABOUTS

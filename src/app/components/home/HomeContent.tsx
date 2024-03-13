@@ -1,42 +1,26 @@
 "use client";
 
-import {
-  IconPlayerTrackNextFilled,
-  IconPlayerTrackPrevFilled,
-} from "@tabler/icons-react";
 import { useState, useRef } from "react";
 
 const HomeContent = () => {
   const konten = [
     {
       gambar:
-        "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
-      judul: "1",
-      deskripsi: "This is the first part.",
-    },
-    {
-      gambar:
-        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
-      judul: "2",
-      deskripsi: "This is the second part.",
-    },
-    {
-      gambar:
         "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
-      judul: "3",
-      deskripsi: "This is the third part.",
+      judul: "HEY THERE, I AM",
+      deskripsi: "RIZKY PUTRA",
     },
     {
       gambar:
         "https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80",
-      judul: "4",
-      deskripsi: "This is the fourth part.",
+      judul: "MY FIELD AS",
+      deskripsi: "FRONT END DEVELOPER",
     },
     {
       gambar:
         "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80",
-      judul: "5",
-      deskripsi: "This is the fifth or final part.",
+      judul: "CREATIVITY",
+      deskripsi: "ABOVE ALL",
     },
   ];
 
@@ -99,8 +83,8 @@ const HomeContent = () => {
   const titik = konten.map((_, urutan) => (
     <span
       key={urutan}
-      className={`h-3 w-3 bg-black rounded-full mx-1 cursor-pointer ${
-        urutan === titikAktif && "ring-1 p-2 ring-black"
+      className={`h-2 w-2 bg-black rounded-full mx-1 cursor-pointer ${
+        urutan === titikAktif && "ring-1 p-1.5 ring-black"
       }`}
       onClick={() => ubahKontenDenganTitik(urutan)}
     />
@@ -123,23 +107,28 @@ const HomeContent = () => {
         onTouchMove={pergerakanMouse}
         onTouchEnd={lepasKlikMouse}
       >
-        <div className="flex items-center justify-center relative">
-          <div className="flex flex-col items-center justify-center absolute -left-36">
-            <div className="text-center p-4 bg-black bg-opacity-50 text-white">
-              <h2 className="font-prefix text-xl md:text-4xl font-bold mb-4">
+        <div className="flex flex-col items-center justify-center relative pb-4">
+          <div className="flex items-center justify-center relative">
+            <div
+              className="h-[240px] w-[280px] md:h-[320px] md:w-[440px] lg:w-[680px] overflow-hidden bg-center bg-cover duration-500 rounded-l-2xl"
+              style={{
+                backgroundImage: `url(${konten[indeksSaatIni].gambar})`,
+              }}
+            ></div>
+
+            <div className="bg-black h-[280px] w-[140px] md:h-[360px] md:w-[280px] absolute -right-4 -z-10 rounded-r-2xl"></div>
+          </div>
+
+          <div className="flex flex-col items-center justify-center absolute bottom-5 -left-10 md:-left-32">
+            <div className="text-center p-4">
+              <h2 className="text-xl md:text-4xl font-bold">
                 {konten[indeksSaatIni].judul}
               </h2>
-              <p className="font-description text-base md:text-2xl">
+              <p className="text-base md:text-2xl">
                 {konten[indeksSaatIni].deskripsi}
               </p>
             </div>
           </div>
-          <div
-            className="h-[380px] w-[290px] lg:w-[880px] lg:h-[580px] overflow-hidden bg-center bg-cover duration-500"
-            style={{
-              backgroundImage: `url(${konten[indeksSaatIni].gambar})`,
-            }}
-          ></div>
         </div>
 
         <div className="flex items-center justify-center p-6">{titik}</div>
