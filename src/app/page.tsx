@@ -6,15 +6,15 @@ export default function Home() {
   return (
     <>
       <div
-        className="h-[484px] flex items-center justify-center"
+        className="h-[384px] md:h-[484px] flex items-center justify-center"
         style={{ backgroundImage: `url('/background/topography.svg')` }}
       >
-        <div className="md:pt-10">
+        <div className=" pt-14 md:pt-10">
           <HomeContent />
         </div>
       </div>
 
-      <div>
+      <div className="pt-12">
         <TextContent />
       </div>
 
