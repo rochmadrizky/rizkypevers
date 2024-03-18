@@ -1,10 +1,15 @@
+import { IconGridGoldenratio } from "@tabler/icons-react";
 import React from "react";
 
 const TextContent = () => {
   return (
     <div className="max-w-7xl mx-auto">
       <div className="flex flex-col items-center justify-center">
-        <div className="w-96 h-12 border-t border-l border-r rounded-t-2xl border-black"></div>
+        <div className="py-12">
+          <IconGridGoldenratio className="stroke-1" />
+        </div>
+
+        <div className="w-60 h-10 border-t border-l border-r rounded-t-2xl border-black"></div>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-20 px-4">
           <div className="max-w-lg rounded-2xl bg-gray-100">

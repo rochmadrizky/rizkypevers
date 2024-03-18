@@ -137,6 +137,7 @@ const HomeContent = () => {
                   <h2 className="text-xl md:text-4xl font-bold">
                     {konten[indeksSaatIni].judul}
                   </h2>
+
                   <p className="text-base md:text-2xl">
                     {konten[indeksSaatIni].deskripsi}
                   </p>
